@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Become a Quorum tester: a free test on iPhone (TestFlight) and Android (Google Play).">
+<meta name="referrer" content="no-referrer">
+<title>Become a tester · Quorum</title>
+<link rel="canonical" href="https://lucasmqar.github.io/quorum-site/beta.html">
+<link rel="alternate" hreflang="en" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=en">
+<link rel="alternate" hreflang="pt-BR" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=pt">
+<link rel="alternate" hreflang="es" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=es">
+<link rel="alternate" hreflang="fr" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=fr">
+<link rel="alternate" hreflang="de" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=de">
+<link rel="alternate" hreflang="ja" href="https://lucasmqar.github.io/quorum-site/beta.html?lang=ja">
+<link rel="alternate" hreflang="x-default" href="https://lucasmqar.github.io/quorum-site/beta.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23F6F2EA'/%3E%3Cpath d='M576.83 723.14 A236 236 0 1 1 723.14 576.83' fill='none' stroke='%2323211D' stroke-width='92' stroke-linecap='round'/%3E%3Ccircle cx='716.38' cy='716.38' r='58' fill='%23C8643B'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quorum">
+<meta property="og:title" content="Become a tester · Quorum">
+<meta property="og:description" content="Twelve questions a day. See how far your bubble is from the world. Join the free test on iPhone or Android.">
+<meta property="og:url" content="https://lucasmqar.github.io/quorum-site/beta.html">
+<meta property="og:image" content="https://lucasmqar.github.io/quorum-site/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quorum. Twelve questions a day. See how far your bubble is from the world.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Become a tester · Quorum">
+<meta name="twitter:description" content="Twelve questions a day. See how far your bubble is from the world. Join the free test on iPhone or Android.">
+<meta name="twitter:image" content="https://lucasmqar.github.io/quorum-site/og.png">
+<!-- Self-contained page: no external scripts, fonts or trackers. Every language is in this file;
+     the script below shows one, chosen from ?lang= or the browser's languages (English by default).
+     Tester links: edit the constants in the next script. While TESTFLIGHT_URL is empty, the iPhone
+     block says the test opens in a few days instead of showing the button. -->
+<script>
+var TESTFLIGHT_URL = "";  // TestFlight public link, e.g. "https://testflight.apple.com/join/XXXXXXXX"
+var GROUP_URL = "https://groups.google.com/g/quorum-testers";
+var OPTIN_URL = "https://play.google.com/apps/testing/com.lucasmqar.quorum";
+var PLAY_URL = "https://play.google.com/store/apps/details?id=com.lucasmqar.quorum";
+</script>
+<style>
+:root{
+  --bg:#f6f2ea;--bg2:#ece6db;--ink:#26241f;--mute:#625c51;--line:#ddd4c5;--acc:#a34b26;--dot:#c8643b;
+  --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1c1b19;--bg2:#272522;--ink:#ede9e0;--mute:#aaa397;--line:#3a3833;--acc:#e8956f;--dot:#d9825f}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans);overflow-wrap:break-word}
+:lang(ja) body,body:lang(ja){line-height:1.8}
+.wrap{max-width:44rem;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:500 22px/1 var(--serif)}
+.mark{width:26px;height:26px;color:var(--ink);flex:none}
+.lang{display:inline-flex;align-items:center;gap:6px;color:var(--mute);font-size:14px}
+.lang svg{width:16px;height:16px;flex:none}
+.lang select{font:inherit;font-size:15px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:9.5rem}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 18px;margin:0;list-style:none}
+.tabs a{display:inline-block;padding:6px 12px;border-radius:999px;color:var(--mute);text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--line)}
+.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h1{font:400 clamp(30px,7vw,40px)/1.15 var(--serif);margin:18px 0 6px;letter-spacing:-.01em}
+.meta{font:13px/1.4 var(--mono);color:var(--mute);margin:0 0 22px}
+h1+.lead{margin-top:14px}
+h2{font:500 21px/1.3 var(--serif);margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:20px 0 4px}
+p,ul,ol{margin:0 0 12px}
+ul,ol{padding-left:1.3em}
+li{margin:4px 0}
+a{color:var(--acc);text-underline-offset:2px}
+a:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+strong{font-weight:600}
+.lead{font-size:19px;color:var(--ink)}
+.muted{color:var(--mute)}
+.box{background:var(--bg2);border-radius:14px;padding:16px 18px;margin:18px 0}
+.box h2{border:0;padding:0;margin:0 0 8px;font-size:19px}
+.box ul{margin:0}
+.box p:last-child{margin-bottom:0}
+.faq{border-top:1px solid var(--line);margin-top:26px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;color:var(--mute);font:400 22px/1 var(--sans)}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 0 12px}
+.cards{display:grid;gap:10px;margin:22px 0}
+.cards a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink)}
+.cards a b{display:block;font:500 19px/1.3 var(--serif)}
+.cards a span{color:var(--mute);font-size:15px}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer p{margin:0 0 6px}
+footer a{color:var(--mute)}
+kbd,.ui{font-weight:600}
+@media (min-width:640px){.cards{grid-template-columns:repeat(3,1fr)}}
+.btn{display:inline-block;margin-top:10px;padding:11px 18px;border-radius:12px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;font-size:16px;line-height:1.3}
+.btn:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.box h2{font-size:21px}
+.steps{list-style:none;counter-reset:step;padding:0;margin:12px 0 0}
+.steps li{counter-increment:step;position:relative;padding-left:42px;margin:0 0 18px}
+.steps li:last-child{margin-bottom:0}
+.steps li::before{content:counter(step);position:absolute;left:0;top:0;width:28px;height:28px;border:1.5px solid var(--dot);border-radius:50%;color:var(--acc);font:600 15px/25px var(--sans);text-align:center}
+.steps li span{display:block}
+.fine{font-size:15px;color:var(--mute)}
+.fine strong{color:var(--ink)}
+</style>
+<noscript><style>[data-lang][hidden]{display:block!important}.lang{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" id="brand" href="index.html"><svg class="mark" viewBox="236 236 552 552" aria-hidden="true" focusable="false"><path d="M576.83 723.14 A236 236 0 1 1 723.14 576.83" fill="none" stroke="currentColor" stroke-width="92" stroke-linecap="round"/><circle cx="716.38" cy="716.38" r="58" fill="var(--dot)"/></svg><span>Quorum</span></a>
+<label class="lang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><select id="lang" aria-label="Language"><option value="en" lang="en">English</option><option value="pt" lang="pt-BR">Português</option><option value="es" lang="es">Español</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option></select></label>
+</header>
+<div data-lang="en" lang="en" data-title="Become a tester · Quorum" data-langlabel="Language">
+<main>
+<h1>Become a tester</h1>
+<p class="lead">Quorum asks twelve questions a day about science, technology, the world and your continent. You predict how others will answer, vote, and see how far your bubble is from the world.</p>
+<p>It’s almost ready. Try it before launch and tell us what you think.</p>
+
+<section class="box" aria-labelledby="ios-en">
+<h2 id="ios-en">iPhone</h2>
+<p>On iPhone, the test runs in Apple’s TestFlight app.</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">Join on TestFlight</a></p>
+<p class="tf-soon"><strong>The iPhone test opens in a few days. Check this page again soon.</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-en">
+<h2 id="android-en">Android</h2>
+<ol class="steps">
+<li><strong>Join the testers group.</strong><span>Use the same Google account as the Play Store on your phone.</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">Join the group</a></li>
+<li><strong>Accept the invitation.</strong><span>On the page that opens, tap the button to become a tester.</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Accept the invitation</a></li>
+<li><strong>Install from Google Play.</strong><span>After you accept, it can take a few minutes for Quorum to show up.</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Open Google Play</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>The test is free.</strong> Quorum itself is free. On iPhone (TestFlight), Quorum+ uses Apple’s sandbox, so you are never charged. On Android, Quorum+ is a normal Google Play subscription with a 7-day free trial; you only pay if you keep it after the trial.</p>
+<p class="fine">The test collects the same data as the app, as described in the <a href="privacy.html?lang=en">Privacy Policy</a>, and the <a href="terms.html?lang=en">Terms of Use</a> apply. Questions? <a href="support.html?lang=en">Support</a>.</p>
+</main>
+<footer><p>Quorum is made by Lucas Arruda, an independent developer.</p><p><a href="privacy.html?lang=en">Privacy Policy</a> · <a href="terms.html?lang=en">Terms of Use</a> · <a href="support.html?lang=en">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="pt" lang="pt-BR" data-title="Seja testador · Quorum" data-langlabel="Idioma" hidden>
+<main>
+<h1>Seja testador</h1>
+<p class="lead">O Quorum faz doze perguntas por dia sobre ciência, tecnologia, o mundo e o seu continente. Você prevê como os outros vão responder, vota e vê o quanto a sua bolha está longe do mundo.</p>
+<p>Ele está quase pronto. Experimente antes do lançamento e conte para nós o que achou.</p>
+
+<section class="box" aria-labelledby="ios-pt">
+<h2 id="ios-pt">iPhone</h2>
+<p>No iPhone, o teste acontece no app TestFlight, da Apple.</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">Entrar pelo TestFlight</a></p>
+<p class="tf-soon"><strong>O teste no iPhone abre em poucos dias. Volte a esta página em breve.</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-pt">
+<h2 id="android-pt">Android</h2>
+<ol class="steps">
+<li><strong>Entre no grupo de testadores.</strong><span>Use a mesma conta Google da Play Store do seu celular.</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">Entrar no grupo</a></li>
+<li><strong>Aceite o convite.</strong><span>Na página que abrir, toque no botão para virar testador.</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Aceitar o convite</a></li>
+<li><strong>Instale pelo Google Play.</strong><span>Depois de aceitar, pode levar alguns minutos para o Quorum aparecer.</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Abrir o Google Play</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>O teste é grátis.</strong> O próprio Quorum é gratuito. No iPhone (TestFlight), o Quorum+ usa o ambiente de testes da Apple (sandbox), então nada é cobrado. No Android, o Quorum+ é uma assinatura normal do Google Play com 7 dias grátis; você só paga se mantiver depois do teste.</p>
+<p class="fine">O teste coleta os mesmos dados do app, descritos na <a href="privacy.html?lang=pt">Política de Privacidade</a>, e valem os <a href="terms.html?lang=pt">Termos de Uso</a>. Dúvidas? <a href="support.html?lang=pt">Suporte</a>.</p>
+</main>
+<footer><p>O Quorum é feito por Lucas Arruda, desenvolvedor independente.</p><p><a href="privacy.html?lang=pt">Política de Privacidade</a> · <a href="terms.html?lang=pt">Termos de Uso</a> · <a href="support.html?lang=pt">Suporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="es" lang="es" data-title="Hazte tester · Quorum" data-langlabel="Idioma" hidden>
+<main>
+<h1>Hazte tester</h1>
+<p class="lead">Quorum hace doce preguntas al día sobre ciencia, tecnología, el mundo y tu continente. Predices cómo responderán los demás, votas y ves qué tan lejos está tu burbuja del mundo.</p>
+<p>Ya casi está lista. Pruébala antes del lanzamiento y cuéntanos qué te parece.</p>
+
+<section class="box" aria-labelledby="ios-es">
+<h2 id="ios-es">iPhone</h2>
+<p>En iPhone, la prueba funciona con la app TestFlight de Apple.</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">Unirme con TestFlight</a></p>
+<p class="tf-soon"><strong>La prueba en iPhone abre en unos días. Vuelve pronto a esta página.</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-es">
+<h2 id="android-es">Android</h2>
+<ol class="steps">
+<li><strong>Únete al grupo de testers.</strong><span>Usa la misma cuenta de Google que la Play Store de tu teléfono.</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">Unirme al grupo</a></li>
+<li><strong>Acepta la invitación.</strong><span>En la página que se abre, toca el botón para convertirte en tester.</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Aceptar la invitación</a></li>
+<li><strong>Instala desde Google Play.</strong><span>Después de aceptar, Quorum puede tardar unos minutos en aparecer.</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Abrir Google Play</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>La prueba es gratis.</strong> Quorum en sí es gratis. En iPhone (TestFlight), Quorum+ usa el entorno de pruebas de Apple (sandbox), así que no se te cobra nada. En Android, Quorum+ es una suscripción normal de Google Play con 7 días gratis; solo pagas si la mantienes después de la prueba.</p>
+<p class="fine">La prueba recopila los mismos datos que la app, descritos en la <a href="privacy.html?lang=es">Política de Privacidad</a>, y se aplican los <a href="terms.html?lang=es">Términos de Uso</a>. ¿Dudas? <a href="support.html?lang=es">Soporte</a>.</p>
+</main>
+<footer><p>Quorum es una app de Lucas Arruda, desarrollador independiente.</p><p><a href="privacy.html?lang=es">Política de Privacidad</a> · <a href="terms.html?lang=es">Términos de Uso</a> · <a href="support.html?lang=es">Soporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="fr" lang="fr" data-title="Devenez testeur · Quorum" data-langlabel="Langue" hidden>
+<main>
+<h1>Devenez testeur</h1>
+<p class="lead">Quorum pose douze questions par jour sur la science, la technologie, le monde et votre continent. Vous pronostiquez la réponse des autres, vous votez, et vous voyez à quel point votre bulle est loin du monde.</p>
+<p>L’app est presque prête. Essayez-la avant son lancement et dites-nous ce que vous en pensez.</p>
+
+<section class="box" aria-labelledby="ios-fr">
+<h2 id="ios-fr">iPhone</h2>
+<p>Sur iPhone, le test passe par l’app TestFlight d’Apple.</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">Rejoindre sur TestFlight</a></p>
+<p class="tf-soon"><strong>Le test sur iPhone ouvre dans quelques jours. Revenez bientôt sur cette page.</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-fr">
+<h2 id="android-fr">Android</h2>
+<ol class="steps">
+<li><strong>Rejoignez le groupe des testeurs.</strong><span>Utilisez le même compte Google que celui du Play Store de votre téléphone.</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">Rejoindre le groupe</a></li>
+<li><strong>Acceptez l’invitation.</strong><span>Sur la page qui s’ouvre, touchez le bouton pour devenir testeur.</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Accepter l’invitation</a></li>
+<li><strong>Installez Quorum depuis Google Play.</strong><span>Après l’acceptation, Quorum peut mettre quelques minutes à apparaître.</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Ouvrir Google Play</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>Le test est gratuit.</strong> Quorum lui-même est gratuit. Sur iPhone (TestFlight), Quorum+ utilise l’environnement de test d’Apple (sandbox) : rien n’est débité. Sur Android, Quorum+ est un abonnement Google Play normal avec 7 jours d’essai gratuit ; vous ne payez que si vous le gardez après l’essai.</p>
+<p class="fine">Le test collecte les mêmes données que l’app, décrites dans la <a href="privacy.html?lang=fr">Politique de confidentialité</a>, et les <a href="terms.html?lang=fr">Conditions d’utilisation</a> s’appliquent. Une question ? <a href="support.html?lang=fr">Assistance</a>.</p>
+</main>
+<footer><p>Quorum est conçu par Lucas Arruda, développeur indépendant.</p><p><a href="privacy.html?lang=fr">Politique de confidentialité</a> · <a href="terms.html?lang=fr">Conditions d’utilisation</a> · <a href="support.html?lang=fr">Assistance</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="de" lang="de" data-title="Werde Tester · Quorum" data-langlabel="Sprache" hidden>
+<main>
+<h1>Werde Tester</h1>
+<p class="lead">Quorum stellt jeden Tag zwölf Fragen zu Wissenschaft, Technik, der Welt und deinem Kontinent. Du schätzt, wie andere antworten, stimmst ab und siehst, wie weit deine Blase von der Welt entfernt ist.</p>
+<p>Die App ist fast fertig. Teste sie vor dem Start und sag uns, was du denkst.</p>
+
+<section class="box" aria-labelledby="ios-de">
+<h2 id="ios-de">iPhone</h2>
+<p>Auf dem iPhone läuft der Test über Apples App TestFlight.</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">Über TestFlight mitmachen</a></p>
+<p class="tf-soon"><strong>Der iPhone-Test startet in ein paar Tagen. Schau bald wieder auf dieser Seite vorbei.</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-de">
+<h2 id="android-de">Android</h2>
+<ol class="steps">
+<li><strong>Tritt der Testergruppe bei.</strong><span>Nutze dasselbe Google-Konto wie im Play Store deines Telefons.</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">Gruppe beitreten</a></li>
+<li><strong>Nimm die Einladung an.</strong><span>Tippe auf der Seite, die sich öffnet, auf die Schaltfläche, um Tester zu werden.</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Einladung annehmen</a></li>
+<li><strong>Installiere Quorum über Google Play.</strong><span>Nach dem Annehmen kann es ein paar Minuten dauern, bis Quorum erscheint.</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Google Play öffnen</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>Der Test ist kostenlos.</strong> Quorum selbst ist kostenlos. Auf dem iPhone (TestFlight) nutzt Quorum+ die Sandbox von Apple – es wird nichts abgebucht. Auf Android ist Quorum+ ein normales Google Play-Abo mit 7 Tagen kostenlos; du zahlst nur, wenn du es nach dem Test behältst.</p>
+<p class="fine">Beim Test werden dieselben Daten erfasst wie in der App, beschrieben in der <a href="privacy.html?lang=de">Datenschutzerklärung</a>; es gelten die <a href="terms.html?lang=de">Nutzungsbedingungen</a>. Fragen? <a href="support.html?lang=de">Support</a>.</p>
+</main>
+<footer><p>Quorum wird von Lucas Arruda entwickelt, einem unabhängigen Entwickler.</p><p><a href="privacy.html?lang=de">Datenschutzerklärung</a> · <a href="terms.html?lang=de">Nutzungsbedingungen</a> · <a href="support.html?lang=de">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="ja" lang="ja" data-title="テスターになる · Quorum" data-langlabel="言語" hidden>
+<main>
+<h1>テスターになる</h1>
+<p class="lead">Quorum は毎日、科学、テクノロジー、世界、そしてあなたの大陸について12の質問を届けます。他の人の回答を予想して投票し、自分のバブルが世界からどれだけ離れているかを確かめましょう。</p>
+<p>リリースまであと少しです。公開前に試して、感想を聞かせてください。</p>
+
+<section class="box" aria-labelledby="ios-ja">
+<h2 id="ios-ja">iPhone</h2>
+<p>iPhone でのテストには、Apple の TestFlight アプリを使います。</p>
+<p class="tf-on" hidden><a class="btn ln-tf" href="#" rel="noopener">TestFlight で参加する</a></p>
+<p class="tf-soon"><strong>iPhone のテストは数日後に始まります。近いうちにまたこのページをご覧ください。</strong></p>
+</section>
+
+<section class="box" aria-labelledby="android-ja">
+<h2 id="android-ja">Android</h2>
+<ol class="steps">
+<li><strong>テスターグループに参加する</strong><span>スマートフォンの Play ストアと同じ Google アカウントを使ってください。</span><a class="btn ln-group" href="https://groups.google.com/g/quorum-testers" rel="noopener">グループに参加</a></li>
+<li><strong>招待を承認する</strong><span>開いたページで、テスターになるためのボタンをタップします。</span><a class="btn ln-optin" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">招待を承認</a></li>
+<li><strong>Google Play からインストールする</strong><span>承認してから Quorum が表示されるまで、数分かかることがあります。</span><a class="btn ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener">Google Play を開く</a></li>
+</ol>
+</section>
+
+<p class="fine"><strong>テストは無料です。</strong>Quorum 自体が無料です。iPhone（TestFlight）では Quorum+ は Apple のサンドボックスを使うため、料金はかかりません。Android では Quorum+ は通常の Google Play サブスクリプションで、7日間無料です。無料期間後も続けた場合のみ料金が発生します。</p>
+<p class="fine">テストで収集するデータはアプリと同じで、<a href="privacy.html?lang=ja">プライバシーポリシー</a>に記載しています。<a href="terms.html?lang=ja">利用規約</a>が適用されます。ご不明な点は<a href="support.html?lang=ja">サポート</a>へ。</p>
+</main>
+<footer><p>Quorum は個人開発者 Lucas Arruda が制作しています。</p><p><a href="privacy.html?lang=ja">プライバシーポリシー</a> · <a href="terms.html?lang=ja">利用規約</a> · <a href="support.html?lang=ja">サポート</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+</div>
+<script>
+(function () {
+  var SUPPORTED = ["en", "pt", "es", "fr", "de", "ja"];
+  var TAG = {en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", ja: "ja"};
+  function norm(t) {
+    if (!t) return null;
+    t = String(t).toLowerCase().slice(0, 2);
+    return SUPPORTED.indexOf(t) >= 0 ? t : null;
+  }
+  function fromQuery() {
+    var m = /[?&]lang=([^&#]*)/.exec(location.search);
+    if (!m) return null;
+    try { return norm(decodeURIComponent(m[1])); } catch (e) { return null; }
+  }
+  function fromBrowser() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) { var l = norm(list[i]); if (l) return l; }
+    return "en";
+  }
+  var blocks = document.querySelectorAll("[data-lang]");
+  var select = document.getElementById("lang");
+  var brand = document.getElementById("brand");
+  function show(lang, updateUrl) {
+    var current = null;
+    for (var i = 0; i < blocks.length; i++) {
+      var on = blocks[i].getAttribute("data-lang") === lang;
+      blocks[i].hidden = !on;
+      if (on) current = blocks[i];
+    }
+    if (!current) return;
+    document.documentElement.lang = TAG[lang];
+    document.title = current.getAttribute("data-title");
+    if (select) { select.value = lang; select.setAttribute("aria-label", current.getAttribute("data-langlabel")); }
+    if (brand) brand.href = "index.html?lang=" + lang;
+    if (updateUrl && window.history && history.replaceState) {
+      history.replaceState(null, "", location.pathname + "?lang=" + lang + location.hash);
+    }
+  }
+  // Tester links come from the constants at the top of the page.
+  function setLinks(cls, url) {
+    var els = document.querySelectorAll("a." + cls);
+    for (var i = 0; i < els.length; i++) els[i].href = url;
+  }
+  setLinks("ln-group", GROUP_URL);
+  setLinks("ln-optin", OPTIN_URL);
+  setLinks("ln-play", PLAY_URL);
+  if (TESTFLIGHT_URL) {
+    setLinks("ln-tf", TESTFLIGHT_URL);
+    var tf = document.querySelectorAll(".tf-on"), soon = document.querySelectorAll(".tf-soon");
+    for (var j = 0; j < tf.length; j++) tf[j].hidden = false;
+    for (var k = 0; k < soon.length; k++) soon[k].hidden = true;
+  }
+  // Put the visitor's platform first: ?p=ios|android (set by the ads) or the device itself.
+  var plat = (location.search.match(/[?&]p=(ios|android)\b/) || [])[1] ||
+    (/android/i.test(navigator.userAgent) ? "android" :
+     /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) ? "ios" : "");
+  if (plat === "android") {
+    var mains = document.querySelectorAll("main");
+    for (var m = 0; m < mains.length; m++) {
+      var ios = mains[m].querySelector('section[aria-labelledby^="ios-"]');
+      var and = mains[m].querySelector('section[aria-labelledby^="android-"]');
+      if (ios && and) mains[m].insertBefore(and, ios);
+    }
+  }
+  if (plat) document.documentElement.setAttribute("data-platform", plat);
+  show(fromQuery() || fromBrowser(), false);
+  if (select) select.addEventListener("change", function () { show(select.value, true); });
+})();
+</script>
+</body>
+</html>
