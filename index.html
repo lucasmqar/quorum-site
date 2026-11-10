@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Quorum: a few questions a day. Understand, predict, vote and compare.">
+<meta name="referrer" content="no-referrer">
+<title>Quorum</title>
+<link rel="canonical" href="https://lucasmqar.github.io/quorum-site/index.html">
+<link rel="alternate" hreflang="en" href="https://lucasmqar.github.io/quorum-site/index.html?lang=en">
+<link rel="alternate" hreflang="pt-BR" href="https://lucasmqar.github.io/quorum-site/index.html?lang=pt">
+<link rel="alternate" hreflang="es" href="https://lucasmqar.github.io/quorum-site/index.html?lang=es">
+<link rel="alternate" hreflang="fr" href="https://lucasmqar.github.io/quorum-site/index.html?lang=fr">
+<link rel="alternate" hreflang="de" href="https://lucasmqar.github.io/quorum-site/index.html?lang=de">
+<link rel="alternate" hreflang="ja" href="https://lucasmqar.github.io/quorum-site/index.html?lang=ja">
+<link rel="alternate" hreflang="x-default" href="https://lucasmqar.github.io/quorum-site/index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23F6F2EA'/%3E%3Cpath d='M576.83 723.14 A236 236 0 1 1 723.14 576.83' fill='none' stroke='%2323211D' stroke-width='92' stroke-linecap='round'/%3E%3Ccircle cx='716.38' cy='716.38' r='58' fill='%23C8643B'/%3E%3C/svg%3E">
+<!-- Self-contained page: no external scripts, fonts or trackers. Every language is in this file;
+     the script below shows one, chosen from ?lang= or the browser's languages (English by default). -->
+<style>
+:root{
+  --bg:#f6f2ea;--bg2:#ece6db;--ink:#26241f;--mute:#625c51;--line:#ddd4c5;--acc:#a34b26;--dot:#c8643b;
+  --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1c1b19;--bg2:#272522;--ink:#ede9e0;--mute:#aaa397;--line:#3a3833;--acc:#e8956f;--dot:#d9825f}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans);overflow-wrap:break-word}
+:lang(ja) body,body:lang(ja){line-height:1.8}
+.wrap{max-width:44rem;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:500 22px/1 var(--serif)}
+.mark{width:26px;height:26px;color:var(--ink);flex:none}
+.lang{display:inline-flex;align-items:center;gap:6px;color:var(--mute);font-size:14px}
+.lang svg{width:16px;height:16px;flex:none}
+.lang select{font:inherit;font-size:15px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:9.5rem}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 18px;margin:0;list-style:none}
+.tabs a{display:inline-block;padding:6px 12px;border-radius:999px;color:var(--mute);text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--line)}
+.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h1{font:400 clamp(30px,7vw,40px)/1.15 var(--serif);margin:18px 0 6px;letter-spacing:-.01em}
+.meta{font:13px/1.4 var(--mono);color:var(--mute);margin:0 0 22px}
+h1+.lead{margin-top:14px}
+h2{font:500 21px/1.3 var(--serif);margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:20px 0 4px}
+p,ul,ol{margin:0 0 12px}
+ul,ol{padding-left:1.3em}
+li{margin:4px 0}
+a{color:var(--acc);text-underline-offset:2px}
+a:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+strong{font-weight:600}
+.lead{font-size:19px;color:var(--ink)}
+.muted{color:var(--mute)}
+.box{background:var(--bg2);border-radius:14px;padding:16px 18px;margin:18px 0}
+.box h2{border:0;padding:0;margin:0 0 8px;font-size:19px}
+.box ul{margin:0}
+.box p:last-child{margin-bottom:0}
+.faq{border-top:1px solid var(--line);margin-top:26px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;color:var(--mute);font:400 22px/1 var(--sans)}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 0 12px}
+.cards{display:grid;gap:10px;margin:22px 0}
+.cards a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink)}
+.cards a b{display:block;font:500 19px/1.3 var(--serif)}
+.cards a span{color:var(--mute);font-size:15px}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer p{margin:0 0 6px}
+footer a{color:var(--mute)}
+kbd,.ui{font-weight:600}
+@media (min-width:640px){.cards{grid-template-columns:repeat(3,1fr)}}
+</style>
+<noscript><style>[data-lang][hidden]{display:block!important}.lang{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" id="brand" href="index.html"><svg class="mark" viewBox="236 236 552 552" aria-hidden="true" focusable="false"><path d="M576.83 723.14 A236 236 0 1 1 723.14 576.83" fill="none" stroke="currentColor" stroke-width="92" stroke-linecap="round"/><circle cx="716.38" cy="716.38" r="58" fill="var(--dot)"/></svg><span>Quorum</span></a>
+<label class="lang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><select id="lang" aria-label="Language"><option value="en" lang="en">English</option><option value="pt" lang="pt-BR">Português</option><option value="es" lang="es">Español</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option></select></label>
+</header>
+<div data-lang="en" lang="en" data-title="Quorum" data-langlabel="Language">
+<nav aria-label="Pages"><ul class="tabs"><li><a href="privacy.html?lang=en">Privacy</a></li><li><a href="terms.html?lang=en">Terms</a></li><li><a href="support.html?lang=en">Support</a></li></ul></nav>
+<main>
+<h1>A few questions a day</h1>
+<p class="lead">Quorum brings a short list of questions every day about science, technology, philosophy, the world and your continent. For each one: understand both sides, predict how others will answer, vote, and compare.</p>
+<p class="muted">One-time purchase. No ads, no tracking, no feed.</p>
+<div class="cards">
+<a href="support.html?lang=en"><b>Support</b><span>Purchases, region, language and your data</span></a>
+<a href="privacy.html?lang=en"><b>Privacy Policy</b><span>What we collect and how to delete it</span></a>
+<a href="terms.html?lang=en"><b>Terms of Use</b><span>The rules for using Quorum</span></a>
+</div>
+</main>
+<footer><p>Quorum is made by Lucas Arruda, an independent developer.</p><p><a href="privacy.html?lang=en">Privacy Policy</a> · <a href="terms.html?lang=en">Terms of Use</a> · <a href="support.html?lang=en">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="pt" lang="pt-BR" data-title="Quorum" data-langlabel="Idioma" hidden>
+<nav aria-label="Páginas"><ul class="tabs"><li><a href="privacy.html?lang=pt">Privacidade</a></li><li><a href="terms.html?lang=pt">Termos</a></li><li><a href="support.html?lang=pt">Suporte</a></li></ul></nav>
+<main>
+<h1>Algumas perguntas por dia</h1>
+<p class="lead">O Quorum traz todo dia uma lista curta de perguntas sobre ciência, tecnologia, filosofia, o mundo e o seu continente. Em cada uma: entenda os dois lados, preveja como os outros vão responder, vote e compare.</p>
+<p class="muted">Compra única. Sem anúncios, sem rastreamento, sem feed.</p>
+<div class="cards">
+<a href="support.html?lang=pt"><b>Suporte</b><span>Compra, região, idioma e seus dados</span></a>
+<a href="privacy.html?lang=pt"><b>Política de Privacidade</b><span>O que coletamos e como apagar</span></a>
+<a href="terms.html?lang=pt"><b>Termos de Uso</b><span>As regras para usar o Quorum</span></a>
+</div>
+</main>
+<footer><p>O Quorum é feito por Lucas Arruda, desenvolvedor independente.</p><p><a href="privacy.html?lang=pt">Política de Privacidade</a> · <a href="terms.html?lang=pt">Termos de Uso</a> · <a href="support.html?lang=pt">Suporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="es" lang="es" data-title="Quorum" data-langlabel="Idioma" hidden>
+<nav aria-label="Páginas"><ul class="tabs"><li><a href="privacy.html?lang=es">Privacidad</a></li><li><a href="terms.html?lang=es">Términos</a></li><li><a href="support.html?lang=es">Soporte</a></li></ul></nav>
+<main>
+<h1>Unas pocas preguntas al día</h1>
+<p class="lead">Quorum trae cada día una lista corta de preguntas sobre ciencia, tecnología, filosofía, el mundo y tu continente. En cada una: entiende ambos lados, predice cómo responderán los demás, vota y compara.</p>
+<p class="muted">Compra única. Sin anuncios, sin rastreo, sin feed.</p>
+<div class="cards">
+<a href="support.html?lang=es"><b>Soporte</b><span>Compra, región, idioma y tus datos</span></a>
+<a href="privacy.html?lang=es"><b>Política de Privacidad</b><span>Qué recopilamos y cómo eliminarlo</span></a>
+<a href="terms.html?lang=es"><b>Términos de Uso</b><span>Las reglas para usar Quorum</span></a>
+</div>
+</main>
+<footer><p>Quorum es una app de Lucas Arruda, desarrollador independiente.</p><p><a href="privacy.html?lang=es">Política de Privacidad</a> · <a href="terms.html?lang=es">Términos de Uso</a> · <a href="support.html?lang=es">Soporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="fr" lang="fr" data-title="Quorum" data-langlabel="Langue" hidden>
+<nav aria-label="Pages"><ul class="tabs"><li><a href="privacy.html?lang=fr">Confidentialité</a></li><li><a href="terms.html?lang=fr">Conditions</a></li><li><a href="support.html?lang=fr">Assistance</a></li></ul></nav>
+<main>
+<h1>Quelques questions par jour</h1>
+<p class="lead">Chaque jour, Quorum propose une courte liste de questions sur la science, la technologie, la philosophie, le monde et votre continent. Pour chacune : comprenez les deux camps, pronostiquez la réponse des autres, votez et comparez.</p>
+<p class="muted">Achat unique. Sans publicité, sans pistage, sans fil d’actualité.</p>
+<div class="cards">
+<a href="support.html?lang=fr"><b>Assistance</b><span>Achat, région, langue et vos données</span></a>
+<a href="privacy.html?lang=fr"><b>Politique de confidentialité</b><span>Ce que nous collectons et comment le supprimer</span></a>
+<a href="terms.html?lang=fr"><b>Conditions d’utilisation</b><span>Les règles d’utilisation de Quorum</span></a>
+</div>
+</main>
+<footer><p>Quorum est conçu par Lucas Arruda, développeur indépendant.</p><p><a href="privacy.html?lang=fr">Politique de confidentialité</a> · <a href="terms.html?lang=fr">Conditions d’utilisation</a> · <a href="support.html?lang=fr">Assistance</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="de" lang="de" data-title="Quorum" data-langlabel="Sprache" hidden>
+<nav aria-label="Seiten"><ul class="tabs"><li><a href="privacy.html?lang=de">Datenschutz</a></li><li><a href="terms.html?lang=de">Nutzungsbedingungen</a></li><li><a href="support.html?lang=de">Support</a></li></ul></nav>
+<main>
+<h1>Ein paar Fragen pro Tag</h1>
+<p class="lead">Quorum bringt jeden Tag eine kurze Liste von Fragen zu Wissenschaft, Technik, Philosophie, der Welt und deinem Kontinent. Zu jeder: beide Seiten verstehen, schätzen, wie andere antworten, abstimmen und vergleichen.</p>
+<p class="muted">Einmaliger Kauf. Keine Werbung, kein Tracking, kein Feed.</p>
+<div class="cards">
+<a href="support.html?lang=de"><b>Support</b><span>Kauf, Region, Sprache und deine Daten</span></a>
+<a href="privacy.html?lang=de"><b>Datenschutzerklärung</b><span>Welche Daten wir erheben und wie du sie löschst</span></a>
+<a href="terms.html?lang=de"><b>Nutzungsbedingungen</b><span>Die Regeln für die Nutzung von Quorum</span></a>
+</div>
+</main>
+<footer><p>Quorum wird von Lucas Arruda entwickelt, einem unabhängigen Entwickler.</p><p><a href="privacy.html?lang=de">Datenschutzerklärung</a> · <a href="terms.html?lang=de">Nutzungsbedingungen</a> · <a href="support.html?lang=de">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="ja" lang="ja" data-title="Quorum" data-langlabel="言語" hidden>
+<nav aria-label="ページ"><ul class="tabs"><li><a href="privacy.html?lang=ja">プライバシー</a></li><li><a href="terms.html?lang=ja">利用規約</a></li><li><a href="support.html?lang=ja">サポート</a></li></ul></nav>
+<main>
+<h1>1日に、いくつかの質問を</h1>
+<p class="lead">Quorum は毎日、科学、テクノロジー、哲学、世界、そしてあなたの大陸についての短い質問リストを届けます。それぞれの質問で、双方の考えを理解し、他の人の回答を予想し、投票して、比べてみましょう。</p>
+<p class="muted">1回限りの購入。広告なし、トラッキングなし、フィードなし。</p>
+<div class="cards">
+<a href="support.html?lang=ja"><b>サポート</b><span>購入、地域、言語、データについて</span></a>
+<a href="privacy.html?lang=ja"><b>プライバシーポリシー</b><span>収集する情報と削除の方法</span></a>
+<a href="terms.html?lang=ja"><b>利用規約</b><span>Quorum を利用するためのルール</span></a>
+</div>
+</main>
+<footer><p>Quorum は個人開発者 Lucas Arruda が制作しています。</p><p><a href="privacy.html?lang=ja">プライバシーポリシー</a> · <a href="terms.html?lang=ja">利用規約</a> · <a href="support.html?lang=ja">サポート</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+</div>
+<script>
+(function () {
+  var SUPPORTED = ["en", "pt", "es", "fr", "de", "ja"];
+  var TAG = {en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", ja: "ja"};
+  function norm(t) {
+    if (!t) return null;
+    t = String(t).toLowerCase().slice(0, 2);
+    return SUPPORTED.indexOf(t) >= 0 ? t : null;
+  }
+  function fromQuery() {
+    var m = /[?&]lang=([^&#]*)/.exec(location.search);
+    if (!m) return null;
+    try { return norm(decodeURIComponent(m[1])); } catch (e) { return null; }
+  }
+  function fromBrowser() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) { var l = norm(list[i]); if (l) return l; }
+    return "en";
+  }
+  var blocks = document.querySelectorAll("[data-lang]");
+  var select = document.getElementById("lang");
+  var brand = document.getElementById("brand");
+  function show(lang, updateUrl) {
+    var current = null;
+    for (var i = 0; i < blocks.length; i++) {
+      var on = blocks[i].getAttribute("data-lang") === lang;
+      blocks[i].hidden = !on;
+      if (on) current = blocks[i];
+    }
+    if (!current) return;
+    document.documentElement.lang = TAG[lang];
+    document.title = current.getAttribute("data-title");
+    if (select) { select.value = lang; select.setAttribute("aria-label", current.getAttribute("data-langlabel")); }
+    if (brand) brand.href = "index.html?lang=" + lang;
+    if (updateUrl && window.history && history.replaceState) {
+      history.replaceState(null, "", location.pathname + "?lang=" + lang + location.hash);
+    }
+  }
+  show(fromQuery() || fromBrowser(), false);
+  if (select) select.addEventListener("change", function () { show(select.value, true); });
+})();
+</script>
+</body>
+</html>

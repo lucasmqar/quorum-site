@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Help with Quorum: purchases, region, language, translation, reminders and deleting data.">
+<meta name="referrer" content="no-referrer">
+<title>Support · Quorum</title>
+<link rel="canonical" href="https://lucasmqar.github.io/quorum-site/support.html">
+<link rel="alternate" hreflang="en" href="https://lucasmqar.github.io/quorum-site/support.html?lang=en">
+<link rel="alternate" hreflang="pt-BR" href="https://lucasmqar.github.io/quorum-site/support.html?lang=pt">
+<link rel="alternate" hreflang="es" href="https://lucasmqar.github.io/quorum-site/support.html?lang=es">
+<link rel="alternate" hreflang="fr" href="https://lucasmqar.github.io/quorum-site/support.html?lang=fr">
+<link rel="alternate" hreflang="de" href="https://lucasmqar.github.io/quorum-site/support.html?lang=de">
+<link rel="alternate" hreflang="ja" href="https://lucasmqar.github.io/quorum-site/support.html?lang=ja">
+<link rel="alternate" hreflang="x-default" href="https://lucasmqar.github.io/quorum-site/support.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23F6F2EA'/%3E%3Cpath d='M576.83 723.14 A236 236 0 1 1 723.14 576.83' fill='none' stroke='%2323211D' stroke-width='92' stroke-linecap='round'/%3E%3Ccircle cx='716.38' cy='716.38' r='58' fill='%23C8643B'/%3E%3C/svg%3E">
+<!-- Self-contained page: no external scripts, fonts or trackers. Every language is in this file;
+     the script below shows one, chosen from ?lang= or the browser's languages (English by default). -->
+<style>
+:root{
+  --bg:#f6f2ea;--bg2:#ece6db;--ink:#26241f;--mute:#625c51;--line:#ddd4c5;--acc:#a34b26;--dot:#c8643b;
+  --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1c1b19;--bg2:#272522;--ink:#ede9e0;--mute:#aaa397;--line:#3a3833;--acc:#e8956f;--dot:#d9825f}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans);overflow-wrap:break-word}
+:lang(ja) body,body:lang(ja){line-height:1.8}
+.wrap{max-width:44rem;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:500 22px/1 var(--serif)}
+.mark{width:26px;height:26px;color:var(--ink);flex:none}
+.lang{display:inline-flex;align-items:center;gap:6px;color:var(--mute);font-size:14px}
+.lang svg{width:16px;height:16px;flex:none}
+.lang select{font:inherit;font-size:15px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:9.5rem}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 18px;margin:0;list-style:none}
+.tabs a{display:inline-block;padding:6px 12px;border-radius:999px;color:var(--mute);text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--line)}
+.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h1{font:400 clamp(30px,7vw,40px)/1.15 var(--serif);margin:18px 0 6px;letter-spacing:-.01em}
+.meta{font:13px/1.4 var(--mono);color:var(--mute);margin:0 0 22px}
+h1+.lead{margin-top:14px}
+h2{font:500 21px/1.3 var(--serif);margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:20px 0 4px}
+p,ul,ol{margin:0 0 12px}
+ul,ol{padding-left:1.3em}
+li{margin:4px 0}
+a{color:var(--acc);text-underline-offset:2px}
+a:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+strong{font-weight:600}
+.lead{font-size:19px;color:var(--ink)}
+.muted{color:var(--mute)}
+.box{background:var(--bg2);border-radius:14px;padding:16px 18px;margin:18px 0}
+.box h2{border:0;padding:0;margin:0 0 8px;font-size:19px}
+.box ul{margin:0}
+.box p:last-child{margin-bottom:0}
+.faq{border-top:1px solid var(--line);margin-top:26px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;color:var(--mute);font:400 22px/1 var(--sans)}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 0 12px}
+.cards{display:grid;gap:10px;margin:22px 0}
+.cards a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink)}
+.cards a b{display:block;font:500 19px/1.3 var(--serif)}
+.cards a span{color:var(--mute);font-size:15px}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer p{margin:0 0 6px}
+footer a{color:var(--mute)}
+kbd,.ui{font-weight:600}
+@media (min-width:640px){.cards{grid-template-columns:repeat(3,1fr)}}
+</style>
+<noscript><style>[data-lang][hidden]{display:block!important}.lang{display:none!important}</style></noscript>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" id="brand" href="index.html"><svg class="mark" viewBox="236 236 552 552" aria-hidden="true" focusable="false"><path d="M576.83 723.14 A236 236 0 1 1 723.14 576.83" fill="none" stroke="currentColor" stroke-width="92" stroke-linecap="round"/><circle cx="716.38" cy="716.38" r="58" fill="var(--dot)"/></svg><span>Quorum</span></a>
+<label class="lang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><select id="lang" aria-label="Language"><option value="en" lang="en">English</option><option value="pt" lang="pt-BR">Português</option><option value="es" lang="es">Español</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option></select></label>
+</header>
+<div data-lang="en" lang="en" data-title="Support · Quorum" data-langlabel="Language">
+<nav aria-label="Pages"><ul class="tabs"><li><a href="privacy.html?lang=en">Privacy</a></li><li><a href="terms.html?lang=en">Terms</a></li><li><a href="support.html?lang=en" aria-current="page">Support</a></li></ul></nav>
+<main>
+<h1>Support</h1>
+<p class="lead">Need help with Quorum? Most answers are below. If yours isn’t, write to us.</p>
+
+<div class="box">
+<h2>Contact</h2>
+<p>E-mail: <a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">Tell us your phone model, system version and the app version (at the bottom of Settings). You don’t need to tell us your name. Never send payment card details.</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>How do I restore my purchase?</summary>
+<div><p>Open Quorum and tap <span class="ui">Restore purchase</span> on the purchase screen or in Settings. Use the same Apple Account (iPhone) or Google account (Android) you bought with. Purchases don’t move between platforms: a purchase made on iPhone can’t be restored on Android, and vice versa.</p></div>
+</details>
+<details>
+<summary>I paid, but the app still asks me to buy</summary>
+<div><p>Check your internet connection and tap <span class="ui">Restore purchase</span>. If the payment is pending (for example, waiting for a parent’s approval or for a payment method to clear), access unlocks as soon as the store confirms it. Still stuck? Write to us.</p></div>
+</details>
+<details>
+<summary>How do I get a refund?</summary>
+<div><p>Refunds are handled by the store where you bought the app. iPhone: <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. Android: <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">Google Play refunds</a>.</p></div>
+</details>
+<details>
+<summary>How do I change my region?</summary>
+<div><p>Tap the region name at the top of the Today screen, or go to <span class="ui">Settings → Region</span>. Regions are continents: South America, North America (including Mexico, Central America and the Caribbean), Europe, Africa, Asia and Oceania.</p>
+<p>Your first region is suggested from your phone’s region setting; Quorum never uses your location. Every day you get global questions plus a few about your continent, all in the same list.</p></div>
+</details>
+<details>
+<summary>Which languages does Quorum support?</summary>
+<div><p>The app is available in English, Portuguese, Spanish, French, German and Japanese, and follows your phone’s language. To change the language for Quorum only: on iPhone, <span class="ui">Settings → Apps → Quorum → Language</span> (shown when your phone has more than one preferred language); on Android 13 or later, <span class="ui">Settings → System → Languages → App languages</span> (names may vary by manufacturer).</p></div>
+</details>
+<details>
+<summary>How does automatic translation work?</summary>
+<div><p>When a question isn’t available in your phone’s language, Quorum translates it on your device and marks it <span class="ui">Translated automatically</span>. Tap <span class="ui">Show original</span> to see the original text. The first time, your phone may need to download a language pack. If translation isn’t available, the question is shown in the closest available language.</p>
+<p>You can turn this off in <span class="ui">Settings → Translate questions automatically</span>.</p></div>
+</details>
+<details>
+<summary>How do I set the daily reminder?</summary>
+<div><p>Go to <span class="ui">Settings → Daily reminder</span>, choose a time and allow notifications when asked. If reminders don’t arrive, check that notifications for Quorum are allowed in your phone’s settings.</p></div>
+</details>
+<details>
+<summary>How do I delete my data?</summary>
+<div><p>In the app: <span class="ui">Settings → Delete account → Delete permanently</span>. This deletes your anonymous account and the purchase record on our server. Votes already counted stay in the totals, with no link to you. Your purchase stays with your Apple or Google account, so you can restore it later.</p>
+<p>If you no longer have the app: install it again, tap <span class="ui">Restore purchase</span>, then delete the account. Or write to us; for Google Play purchases, include the order number (it starts with “GPA.”). Anonymous accounts that never made a purchase are deleted automatically after 30 days.</p>
+<p>More details in the <a href="privacy.html?lang=en">Privacy Policy</a>.</p></div>
+</details>
+<details>
+<summary>How are the questions made? Is Quorum neutral?</summary>
+<div><p>Every day the developer prepares the questions with the help of AI tools, using recent news when relevant, and checks each one for neutrality before it is published. Questions are about open issues where reasonable people disagree, and each one shows the best argument for each side.</p>
+<p>We don’t ask about elections or candidates, don’t accuse named people, don’t give medical, legal or financial advice, and don’t target any group. If a question seems unfair, open it and tap <span class="ui">Report question</span>. Every report is reviewed.</p></div>
+</details>
+<details>
+<summary>Why don’t I see results for my region?</summary>
+<div><p>To protect privacy, results for a continent appear only after enough people from that continent have answered the question. The global total is shown after you vote.</p></div>
+</details>
+<details>
+<summary>Is Quorum a scientific poll?</summary>
+<div><p>No. Results only reflect the people who chose to answer in the app, so they are not representative of any population.</p></div>
+</details>
+</div>
+</main>
+<footer><p>Quorum is made by Lucas Arruda, an independent developer.</p><p><a href="privacy.html?lang=en">Privacy Policy</a> · <a href="terms.html?lang=en">Terms of Use</a> · <a href="support.html?lang=en">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="pt" lang="pt-BR" data-title="Suporte · Quorum" data-langlabel="Idioma" hidden>
+<nav aria-label="Páginas"><ul class="tabs"><li><a href="privacy.html?lang=pt">Privacidade</a></li><li><a href="terms.html?lang=pt">Termos</a></li><li><a href="support.html?lang=pt" aria-current="page">Suporte</a></li></ul></nav>
+<main>
+<h1>Suporte</h1>
+<p class="lead">Precisa de ajuda com o Quorum? A maioria das respostas está aqui embaixo. Se a sua não estiver, escreva para nós.</p>
+
+<div class="box">
+<h2>Contato</h2>
+<p>E-mail: <a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">Diga o modelo do seu celular, a versão do sistema e a versão do app (no fim dos Ajustes). Não precisa dizer seu nome. Nunca envie dados de cartão.</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>Como restauro minha compra?</summary>
+<div><p>Abra o Quorum e toque em <span class="ui">Restaurar compra</span> na tela de compra ou nos Ajustes. Use a mesma conta Apple (iPhone) ou Google (Android) com que você comprou. As compras não passam de uma plataforma para outra: uma compra feita no iPhone não pode ser restaurada no Android, e vice-versa.</p></div>
+</details>
+<details>
+<summary>Paguei, mas o app continua pedindo a compra</summary>
+<div><p>Verifique sua conexão com a internet e toque em <span class="ui">Restaurar compra</span>. Se o pagamento estiver pendente (por exemplo, aguardando a aprovação de um responsável ou a confirmação da forma de pagamento), o acesso é liberado assim que a loja confirmar. Continua com problema? Escreva para nós.</p></div>
+</details>
+<details>
+<summary>Como peço reembolso?</summary>
+<div><p>Os reembolsos são feitos pela loja onde você comprou o app. iPhone: <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. Android: <a href="https://support.google.com/googleplay/answer/2479637?hl=pt-BR" rel="noopener">reembolsos do Google Play</a>.</p></div>
+</details>
+<details>
+<summary>Como troco minha região?</summary>
+<div><p>Toque no nome da região no topo da tela Hoje ou vá em <span class="ui">Ajustes → Região</span>. As regiões são continentes: América do Sul, América do Norte (incluindo México, América Central e Caribe), Europa, África, Ásia e Oceania.</p>
+<p>A primeira região é sugerida pela configuração de região do seu celular; o Quorum nunca usa sua localização. Todo dia você recebe perguntas globais e algumas sobre o seu continente, tudo na mesma lista.</p></div>
+</details>
+<details>
+<summary>Quais idiomas o Quorum tem?</summary>
+<div><p>O app está disponível em inglês, português, espanhol, francês, alemão e japonês, e segue o idioma do seu celular. Para trocar o idioma só do Quorum: no iPhone, <span class="ui">Ajustes → Apps → Quorum → Idioma</span> (aparece quando o celular tem mais de um idioma preferido); no Android 13 ou mais recente, <span class="ui">Configurações → Sistema → Idiomas → Idiomas dos apps</span> (os nomes podem variar conforme o fabricante).</p></div>
+</details>
+<details>
+<summary>Como funciona a tradução automática?</summary>
+<div><p>Quando uma pergunta não está disponível no idioma do seu celular, o Quorum a traduz no próprio aparelho e mostra <span class="ui">Traduzido automaticamente</span>. Toque em <span class="ui">Ver original</span> para ver o texto original. Na primeira vez, o celular pode precisar baixar um pacote de idioma. Se a tradução não estiver disponível, a pergunta aparece no idioma disponível mais próximo.</p>
+<p>Você pode desligar isso em <span class="ui">Ajustes → Traduzir perguntas automaticamente</span>.</p></div>
+</details>
+<details>
+<summary>Como ativo o lembrete diário?</summary>
+<div><p>Vá em <span class="ui">Ajustes → Lembrete diário</span>, escolha um horário e permita as notificações quando o app pedir. Se os lembretes não chegarem, confira se as notificações do Quorum estão permitidas nas configurações do celular.</p></div>
+</details>
+<details>
+<summary>Como apago meus dados?</summary>
+<div><p>No app: <span class="ui">Ajustes → Excluir conta → Excluir definitivamente</span>. Isso apaga sua conta anônima e o registro da compra no nosso servidor. Os votos já contados continuam nos totais, sem vínculo com você. Sua compra continua na sua conta Apple ou Google, então você pode restaurá-la depois.</p>
+<p>Se você não tem mais o app: instale de novo, toque em <span class="ui">Restaurar compra</span> e depois exclua a conta. Ou escreva para nós; para compras no Google Play, inclua o número do pedido (começa com “GPA.”). Contas anônimas que nunca fizeram uma compra são apagadas automaticamente depois de 30 dias.</p>
+<p>Mais detalhes na <a href="privacy.html?lang=pt">Política de Privacidade</a>.</p></div>
+</details>
+<details>
+<summary>Como as perguntas são feitas? O Quorum é neutro?</summary>
+<div><p>Todo dia o desenvolvedor prepara as perguntas com ajuda de ferramentas de IA, usando notícias recentes quando faz sentido, e revisa cada uma quanto à neutralidade antes de publicar. As perguntas tratam de temas em aberto, em que pessoas razoáveis discordam, e cada uma mostra o melhor argumento de cada lado.</p>
+<p>Não perguntamos sobre eleições ou candidatos, não acusamos pessoas pelo nome, não damos conselhos médicos, jurídicos ou financeiros e não miramos nenhum grupo. Se uma pergunta parecer injusta, abra-a e toque em <span class="ui">Reportar pergunta</span>. Todas as denúncias são analisadas.</p></div>
+</details>
+<details>
+<summary>Por que não vejo os resultados da minha região?</summary>
+<div><p>Para proteger a privacidade, os resultados de um continente só aparecem depois que pessoas suficientes daquele continente responderam à pergunta. O total global aparece depois que você vota.</p></div>
+</details>
+<details>
+<summary>O Quorum é uma pesquisa científica?</summary>
+<div><p>Não. Os resultados refletem apenas as pessoas que escolheram responder no app, então não representam nenhuma população.</p></div>
+</details>
+</div>
+</main>
+<footer><p>O Quorum é feito por Lucas Arruda, desenvolvedor independente.</p><p><a href="privacy.html?lang=pt">Política de Privacidade</a> · <a href="terms.html?lang=pt">Termos de Uso</a> · <a href="support.html?lang=pt">Suporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="es" lang="es" data-title="Soporte · Quorum" data-langlabel="Idioma" hidden>
+<nav aria-label="Páginas"><ul class="tabs"><li><a href="privacy.html?lang=es">Privacidad</a></li><li><a href="terms.html?lang=es">Términos</a></li><li><a href="support.html?lang=es" aria-current="page">Soporte</a></li></ul></nav>
+<main>
+<h1>Soporte</h1>
+<p class="lead">¿Necesitas ayuda con Quorum? La mayoría de las respuestas están aquí abajo. Si no encuentras la tuya, escríbenos.</p>
+
+<div class="box">
+<h2>Contacto</h2>
+<p>Correo: <a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">Indica el modelo de tu teléfono, la versión del sistema y la versión de la app (al final de Ajustes). No necesitas decirnos tu nombre. Nunca envíes datos de tarjetas.</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>¿Cómo restauro mi compra?</summary>
+<div><p>Abre Quorum y toca <span class="ui">Restaurar compra</span> en la pantalla de compra o en Ajustes. Usa la misma cuenta de Apple (iPhone) o de Google (Android) con la que compraste. Las compras no pasan de una plataforma a otra: una compra hecha en iPhone no se puede restaurar en Android, ni al revés.</p></div>
+</details>
+<details>
+<summary>Pagué, pero la app sigue pidiéndome comprar</summary>
+<div><p>Revisa tu conexión a internet y toca <span class="ui">Restaurar compra</span>. Si el pago está pendiente (por ejemplo, esperando la aprobación de un adulto responsable o la confirmación del método de pago), el acceso se habilita en cuanto la tienda lo confirma. ¿Sigues con problemas? Escríbenos.</p></div>
+</details>
+<details>
+<summary>¿Cómo pido un reembolso?</summary>
+<div><p>Los reembolsos los gestiona la tienda donde compraste la app. iPhone: <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. Android: <a href="https://support.google.com/googleplay/answer/2479637?hl=es-419" rel="noopener">reembolsos de Google Play</a>.</p></div>
+</details>
+<details>
+<summary>¿Cómo cambio mi región?</summary>
+<div><p>Toca el nombre de la región en la parte superior de la pantalla Hoy, o ve a <span class="ui">Ajustes → Región</span>. Las regiones son continentes: Sudamérica, Norteamérica (incluye México, Centroamérica y el Caribe), Europa, África, Asia y Oceanía.</p>
+<p>La primera región se sugiere a partir de la configuración de región de tu teléfono; Quorum nunca usa tu ubicación. Cada día recibes preguntas globales y algunas sobre tu continente, todo en la misma lista.</p></div>
+</details>
+<details>
+<summary>¿En qué idiomas está Quorum?</summary>
+<div><p>La app está disponible en inglés, portugués, español, francés, alemán y japonés, y sigue el idioma de tu teléfono. Para cambiar el idioma solo de Quorum: en iPhone, <span class="ui">Ajustes → Apps → Quorum → Idioma</span> (aparece cuando tu teléfono tiene más de un idioma preferido); en Android 13 o posterior, <span class="ui">Configuración → Sistema → Idiomas → Idiomas de las apps</span> (los nombres pueden variar según el fabricante).</p></div>
+</details>
+<details>
+<summary>¿Cómo funciona la traducción automática?</summary>
+<div><p>Cuando una pregunta no está disponible en el idioma de tu teléfono, Quorum la traduce en tu dispositivo y muestra <span class="ui">Traducido automáticamente</span>. Toca <span class="ui">Ver original</span> para ver el texto original. La primera vez, tu teléfono puede necesitar descargar un paquete de idioma. Si la traducción no está disponible, la pregunta se muestra en el idioma disponible más cercano.</p>
+<p>Puedes desactivarla en <span class="ui">Ajustes → Traducir preguntas automáticamente</span>.</p></div>
+</details>
+<details>
+<summary>¿Cómo activo el recordatorio diario?</summary>
+<div><p>Ve a <span class="ui">Ajustes → Recordatorio diario</span>, elige una hora y permite las notificaciones cuando la app lo pida. Si no te llegan los recordatorios, revisa que las notificaciones de Quorum estén permitidas en la configuración de tu teléfono.</p></div>
+</details>
+<details>
+<summary>¿Cómo elimino mis datos?</summary>
+<div><p>En la app: <span class="ui">Ajustes → Eliminar cuenta → Eliminar definitivamente</span>. Esto elimina tu cuenta anónima y el registro de la compra en nuestro servidor. Los votos ya contados se mantienen en los totales, sin vínculo contigo. Tu compra sigue en tu cuenta de Apple o de Google, así que puedes restaurarla después.</p>
+<p>Si ya no tienes la app: instálala de nuevo, toca <span class="ui">Restaurar compra</span> y luego elimina la cuenta. O escríbenos; para compras en Google Play, incluye el número de pedido (empieza con “GPA.”). Las cuentas anónimas que nunca hicieron una compra se eliminan automáticamente después de 30 días.</p>
+<p>Más detalles en la <a href="privacy.html?lang=es">Política de Privacidad</a>.</p></div>
+</details>
+<details>
+<summary>¿Cómo se hacen las preguntas? ¿Quorum es neutral?</summary>
+<div><p>Cada día el desarrollador prepara las preguntas con ayuda de herramientas de IA, usando noticias recientes cuando tiene sentido, y revisa la neutralidad de cada una antes de publicarla. Las preguntas tratan temas abiertos en los que personas razonables no están de acuerdo, y cada una muestra el mejor argumento de cada lado.</p>
+<p>No preguntamos sobre elecciones ni candidatos, no acusamos a personas por su nombre, no damos consejos médicos, legales ni financieros y no apuntamos contra ningún grupo. Si una pregunta te parece injusta, ábrela y toca <span class="ui">Reportar pregunta</span>. Revisamos todos los reportes.</p></div>
+</details>
+<details>
+<summary>¿Por qué no veo los resultados de mi región?</summary>
+<div><p>Para proteger la privacidad, los resultados de un continente aparecen solo cuando suficientes personas de ese continente respondieron la pregunta. El total global se muestra después de que votas.</p></div>
+</details>
+<details>
+<summary>¿Quorum es una encuesta científica?</summary>
+<div><p>No. Los resultados reflejan solo a las personas que eligieron responder en la app, así que no representan a ninguna población.</p></div>
+</details>
+</div>
+</main>
+<footer><p>Quorum es una app de Lucas Arruda, desarrollador independiente.</p><p><a href="privacy.html?lang=es">Política de Privacidad</a> · <a href="terms.html?lang=es">Términos de Uso</a> · <a href="support.html?lang=es">Soporte</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="fr" lang="fr" data-title="Assistance · Quorum" data-langlabel="Langue" hidden>
+<nav aria-label="Pages"><ul class="tabs"><li><a href="privacy.html?lang=fr">Confidentialité</a></li><li><a href="terms.html?lang=fr">Conditions</a></li><li><a href="support.html?lang=fr" aria-current="page">Assistance</a></li></ul></nav>
+<main>
+<h1>Assistance</h1>
+<p class="lead">Besoin d’aide avec Quorum ? La plupart des réponses se trouvent ci-dessous. Si vous ne trouvez pas la vôtre, écrivez-nous.</p>
+
+<div class="box">
+<h2>Contact</h2>
+<p>E-mail : <a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">Indiquez le modèle de votre téléphone, la version du système et la version de l’app (en bas des Réglages). Inutile de nous donner votre nom. N’envoyez jamais de données de carte bancaire.</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>Comment restaurer mon achat ?</summary>
+<div><p>Ouvrez Quorum et touchez <span class="ui">Restaurer l’achat</span> sur l’écran d’achat ou dans les Réglages. Utilisez le même compte Apple (iPhone) ou Google (Android) que lors de l’achat. Les achats ne passent pas d’une plateforme à l’autre : un achat effectué sur iPhone ne peut pas être restauré sur Android, et inversement.</p></div>
+</details>
+<details>
+<summary>J’ai payé, mais l’app me demande toujours d’acheter</summary>
+<div><p>Vérifiez votre connexion Internet et touchez <span class="ui">Restaurer l’achat</span>. Si le paiement est en attente (par exemple, en attente de l’accord d’un parent ou de la validation d’un moyen de paiement), l’accès se débloque dès que la boutique le confirme. Toujours bloqué ? Écrivez-nous.</p></div>
+</details>
+<details>
+<summary>Comment obtenir un remboursement ?</summary>
+<div><p>Les remboursements sont gérés par la boutique où vous avez acheté l’app. iPhone : <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. Android : <a href="https://support.google.com/googleplay/answer/2479637?hl=fr" rel="noopener">remboursements Google Play</a>.</p></div>
+</details>
+<details>
+<summary>Comment changer de région ?</summary>
+<div><p>Touchez le nom de la région en haut de l’écran Aujourd’hui, ou allez dans <span class="ui">Réglages → Région</span>. Les régions sont des continents : Amérique du Sud, Amérique du Nord (y compris le Mexique, l’Amérique centrale et les Caraïbes), Europe, Afrique, Asie et Océanie.</p>
+<p>Votre première région est suggérée d’après le réglage de région de votre téléphone ; Quorum n’utilise jamais votre position. Chaque jour, vous recevez des questions mondiales et quelques-unes sur votre continent, le tout dans la même liste.</p></div>
+</details>
+<details>
+<summary>Quelles langues Quorum prend-il en charge ?</summary>
+<div><p>L’app est disponible en anglais, portugais, espagnol, français, allemand et japonais, et suit la langue de votre téléphone. Pour changer la langue de Quorum uniquement : sur iPhone, <span class="ui">Réglages → Apps → Quorum → Langue</span> (visible quand votre téléphone a plus d’une langue préférée) ; sur Android 13 ou ultérieur, <span class="ui">Paramètres → Système → Langues → Langues des applications</span> (les noms peuvent varier selon le fabricant).</p></div>
+</details>
+<details>
+<summary>Comment fonctionne la traduction automatique ?</summary>
+<div><p>Quand une question n’est pas disponible dans la langue de votre téléphone, Quorum la traduit sur votre appareil et affiche <span class="ui">Traduit automatiquement</span>. Touchez <span class="ui">Voir l’original</span> pour voir le texte d’origine. La première fois, votre téléphone peut avoir besoin de télécharger un pack de langue. Si la traduction n’est pas disponible, la question s’affiche dans la langue disponible la plus proche.</p>
+<p>Vous pouvez la désactiver dans <span class="ui">Réglages → Traduire les questions automatiquement</span>.</p></div>
+</details>
+<details>
+<summary>Comment activer le rappel quotidien ?</summary>
+<div><p>Allez dans <span class="ui">Réglages → Rappel quotidien</span>, choisissez une heure et autorisez les notifications quand l’app le demande. Si les rappels n’arrivent pas, vérifiez que les notifications de Quorum sont autorisées dans les réglages de votre téléphone.</p></div>
+</details>
+<details>
+<summary>Comment supprimer mes données ?</summary>
+<div><p>Dans l’app : <span class="ui">Réglages → Supprimer le compte → Supprimer définitivement</span>. Cela supprime votre compte anonyme et l’enregistrement de l’achat sur notre serveur. Les votes déjà comptés restent dans les totaux, sans lien avec vous. Votre achat reste associé à votre compte Apple ou Google : vous pourrez donc le restaurer plus tard.</p>
+<p>Si vous n’avez plus l’app : réinstallez-la, touchez <span class="ui">Restaurer l’achat</span>, puis supprimez le compte. Ou écrivez-nous ; pour un achat Google Play, indiquez le numéro de commande (il commence par « GPA. »). Les comptes anonymes qui n’ont jamais effectué d’achat sont supprimés automatiquement après 30 jours.</p>
+<p>Plus de détails dans la <a href="privacy.html?lang=fr">Politique de confidentialité</a>.</p></div>
+</details>
+<details>
+<summary>Comment les questions sont-elles faites ? Quorum est-il neutre ?</summary>
+<div><p>Chaque jour, le développeur prépare les questions avec l’aide d’outils d’IA, en s’appuyant sur l’actualité récente quand c’est pertinent, et vérifie la neutralité de chacune avant de la publier. Les questions portent sur des sujets ouverts, sur lesquels des personnes raisonnables ne sont pas d’accord, et chacune présente le meilleur argument de chaque camp.</p>
+<p>Nous ne posons pas de questions sur les élections ou les candidats, n’accusons pas de personnes nommément, ne donnons pas de conseils médicaux, juridiques ou financiers et ne visons aucun groupe. Si une question vous semble injuste, ouvrez-la et touchez <span class="ui">Signaler la question</span>. Chaque signalement est examiné.</p></div>
+</details>
+<details>
+<summary>Pourquoi je ne vois pas les résultats de ma région ?</summary>
+<div><p>Pour protéger la vie privée, les résultats d’un continent n’apparaissent qu’une fois que suffisamment de personnes de ce continent ont répondu à la question. Le total mondial s’affiche après votre vote.</p></div>
+</details>
+<details>
+<summary>Quorum est-il un sondage scientifique ?</summary>
+<div><p>Non. Les résultats ne reflètent que les personnes qui ont choisi de répondre dans l’app ; ils ne sont donc représentatifs d’aucune population.</p></div>
+</details>
+</div>
+</main>
+<footer><p>Quorum est conçu par Lucas Arruda, développeur indépendant.</p><p><a href="privacy.html?lang=fr">Politique de confidentialité</a> · <a href="terms.html?lang=fr">Conditions d’utilisation</a> · <a href="support.html?lang=fr">Assistance</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="de" lang="de" data-title="Support · Quorum" data-langlabel="Sprache" hidden>
+<nav aria-label="Seiten"><ul class="tabs"><li><a href="privacy.html?lang=de">Datenschutz</a></li><li><a href="terms.html?lang=de">Nutzungsbedingungen</a></li><li><a href="support.html?lang=de" aria-current="page">Support</a></li></ul></nav>
+<main>
+<h1>Support</h1>
+<p class="lead">Brauchst du Hilfe mit Quorum? Die meisten Antworten findest du unten. Wenn deine nicht dabei ist, schreib uns.</p>
+
+<div class="box">
+<h2>Kontakt</h2>
+<p>E-Mail: <a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">Nenn uns dein Telefonmodell, die Systemversion und die App-Version (ganz unten in den Einstellungen). Deinen Namen brauchen wir nicht. Schick uns niemals Kartendaten.</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>Wie stelle ich meinen Kauf wieder her?</summary>
+<div><p>Öffne Quorum und tippe auf dem Kaufbildschirm oder in den Einstellungen auf <span class="ui">Kauf wiederherstellen</span>. Nutze dasselbe Apple-Konto (iPhone) bzw. Google-Konto (Android), mit dem du gekauft hast. Käufe lassen sich nicht zwischen Plattformen übertragen: Ein Kauf auf dem iPhone kann nicht auf Android wiederhergestellt werden und umgekehrt.</p></div>
+</details>
+<details>
+<summary>Ich habe bezahlt, aber die App will, dass ich kaufe</summary>
+<div><p>Prüfe deine Internetverbindung und tippe auf <span class="ui">Kauf wiederherstellen</span>. Wenn die Zahlung noch aussteht (zum Beispiel, weil ein Elternteil zustimmen muss oder eine Zahlungsmethode noch bestätigt wird), wird der Zugang freigeschaltet, sobald der Store sie bestätigt. Klappt es immer noch nicht? Schreib uns.</p></div>
+</details>
+<details>
+<summary>Wie bekomme ich eine Erstattung?</summary>
+<div><p>Erstattungen laufen über den Store, in dem du die App gekauft hast. iPhone: <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>. Android: <a href="https://support.google.com/googleplay/answer/2479637?hl=de" rel="noopener">Erstattungen bei Google Play</a>.</p></div>
+</details>
+<details>
+<summary>Wie ändere ich meine Region?</summary>
+<div><p>Tippe oben auf dem Bildschirm „Heute“ auf den Namen der Region oder gehe zu <span class="ui">Einstellungen → Region</span>. Regionen sind Kontinente: Südamerika, Nordamerika (einschließlich Mexiko, Mittelamerika und der Karibik), Europa, Afrika, Asien und Ozeanien.</p>
+<p>Deine erste Region wird anhand der Regionseinstellung deines Telefons vorgeschlagen; Quorum nutzt nie deinen Standort. Jeden Tag bekommst du globale Fragen und einige zu deinem Kontinent, alles in derselben Liste.</p></div>
+</details>
+<details>
+<summary>Welche Sprachen unterstützt Quorum?</summary>
+<div><p>Die App gibt es auf Englisch, Portugiesisch, Spanisch, Französisch, Deutsch und Japanisch; sie folgt der Sprache deines Telefons. So änderst du die Sprache nur für Quorum: auf dem iPhone unter <span class="ui">Einstellungen → Apps → Quorum → Sprache</span> (erscheint, wenn dein Telefon mehr als eine bevorzugte Sprache hat); auf Android 13 oder neuer unter <span class="ui">Einstellungen → System → Sprachen → App-Sprachen</span> (die Bezeichnungen können je nach Hersteller abweichen).</p></div>
+</details>
+<details>
+<summary>Wie funktioniert die automatische Übersetzung?</summary>
+<div><p>Wenn eine Frage nicht in der Sprache deines Telefons verfügbar ist, übersetzt Quorum sie auf deinem Gerät und zeigt <span class="ui">Automatisch übersetzt</span> an. Tippe auf <span class="ui">Original anzeigen</span>, um den Originaltext zu sehen. Beim ersten Mal muss dein Telefon eventuell ein Sprachpaket herunterladen. Ist keine Übersetzung möglich, erscheint die Frage in der nächstliegenden verfügbaren Sprache.</p>
+<p>Du kannst das unter <span class="ui">Einstellungen → Fragen automatisch übersetzen</span> ausschalten.</p></div>
+</details>
+<details>
+<summary>Wie richte ich die tägliche Erinnerung ein?</summary>
+<div><p>Gehe zu <span class="ui">Einstellungen → Tägliche Erinnerung</span>, wähle eine Uhrzeit und erlaube Mitteilungen, wenn du gefragt wirst. Wenn keine Erinnerungen ankommen, prüfe, ob Mitteilungen für Quorum in den Einstellungen deines Telefons erlaubt sind.</p></div>
+</details>
+<details>
+<summary>Wie lösche ich meine Daten?</summary>
+<div><p>In der App: <span class="ui">Einstellungen → Konto löschen → Endgültig löschen</span>. Dadurch werden dein anonymes Konto und der Kaufeintrag auf unserem Server gelöscht. Bereits gezählte Stimmen bleiben in den Summen, ohne Verbindung zu dir. Dein Kauf bleibt bei deinem Apple- oder Google-Konto, sodass du ihn später wiederherstellen kannst.</p>
+<p>Wenn du die App nicht mehr hast: Installiere sie erneut, tippe auf <span class="ui">Kauf wiederherstellen</span> und lösche dann das Konto. Oder schreib uns; bei Käufen über Google Play gib bitte die Bestellnummer an (sie beginnt mit „GPA.“). Anonyme Konten ohne Kauf werden nach 30 Tagen automatisch gelöscht.</p>
+<p>Mehr dazu in der <a href="privacy.html?lang=de">Datenschutzerklärung</a>.</p></div>
+</details>
+<details>
+<summary>Wie entstehen die Fragen? Ist Quorum neutral?</summary>
+<div><p>Jeden Tag erstellt der Entwickler die Fragen mithilfe von KI-Werkzeugen, bei Bedarf auf Basis aktueller Nachrichten, und prüft jede vor der Veröffentlichung auf Neutralität. Die Fragen behandeln offene Themen, bei denen vernünftige Menschen unterschiedlicher Meinung sind, und jede zeigt das stärkste Argument jeder Seite.</p>
+<p>Wir fragen nicht nach Wahlen oder Kandidaten, beschuldigen keine namentlich genannten Personen, geben keine medizinischen, rechtlichen oder finanziellen Ratschläge und richten uns gegen keine Gruppe. Wenn dir eine Frage unfair erscheint, öffne sie und tippe auf <span class="ui">Frage melden</span>. Jede Meldung wird geprüft.</p></div>
+</details>
+<details>
+<summary>Warum sehe ich keine Ergebnisse für meine Region?</summary>
+<div><p>Zum Schutz der Privatsphäre erscheinen Ergebnisse für einen Kontinent erst, wenn genügend Menschen von dort die Frage beantwortet haben. Die globale Summe siehst du, nachdem du abgestimmt hast.</p></div>
+</details>
+<details>
+<summary>Ist Quorum eine wissenschaftliche Umfrage?</summary>
+<div><p>Nein. Die Ergebnisse spiegeln nur die Menschen wider, die in der App antworten wollten; sie sind also für keine Bevölkerung repräsentativ.</p></div>
+</details>
+</div>
+</main>
+<footer><p>Quorum wird von Lucas Arruda entwickelt, einem unabhängigen Entwickler.</p><p><a href="privacy.html?lang=de">Datenschutzerklärung</a> · <a href="terms.html?lang=de">Nutzungsbedingungen</a> · <a href="support.html?lang=de">Support</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+<div data-lang="ja" lang="ja" data-title="サポート · Quorum" data-langlabel="言語" hidden>
+<nav aria-label="ページ"><ul class="tabs"><li><a href="privacy.html?lang=ja">プライバシー</a></li><li><a href="terms.html?lang=ja">利用規約</a></li><li><a href="support.html?lang=ja" aria-current="page">サポート</a></li></ul></nav>
+<main>
+<h1>サポート</h1>
+<p class="lead">Quorum についてお困りですか？ よくある質問への回答は下にまとめています。見つからない場合は、お気軽にご連絡ください。</p>
+
+<div class="box">
+<h2>お問い合わせ</h2>
+<p>メール：<a href="mailto:lucasmqar777@gmail.com">lucasmqar777@gmail.com</a></p>
+<p class="muted">端末の機種、OS のバージョン、アプリのバージョン（設定の一番下に表示）をお知らせください。お名前は不要です。カード情報は絶対に送らないでください。</p>
+</div>
+
+<div class="faq">
+<details>
+<summary>購入を復元するには？</summary>
+<div><p>Quorum を開き、購入画面または設定で<span class="ui">購入を復元</span>をタップしてください。購入時と同じ Apple アカウント（iPhone）または Google アカウント（Android）を使ってください。購入はプラットフォーム間で移行できません。iPhone での購入を Android で復元すること、またその逆はできません。</p></div>
+</details>
+<details>
+<summary>支払ったのに、まだ購入を求められます</summary>
+<div><p>インターネット接続を確認し、<span class="ui">購入を復元</span>をタップしてください。支払いが保留中の場合（保護者の承認待ちや、支払い方法の確認待ちなど）は、ストアが確認した時点で利用できるようになります。それでも解決しない場合はご連絡ください。</p></div>
+</details>
+<details>
+<summary>返金を受けるには？</summary>
+<div><p>返金は、アプリを購入したストアが取り扱います。iPhone：<a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a>。Android：<a href="https://support.google.com/googleplay/answer/2479637?hl=ja" rel="noopener">Google Play の返金</a>。</p></div>
+</details>
+<details>
+<summary>地域を変更するには？</summary>
+<div><p>「今日」画面の上部にある地域名をタップするか、<span class="ui">設定 → 地域</span>を開いてください。地域は大陸単位です：南アメリカ、北アメリカ（メキシコ、中央アメリカ、カリブ海地域を含む）、ヨーロッパ、アフリカ、アジア、オセアニア。</p>
+<p>最初の地域は端末の地域設定をもとに提案されます。Quorum が位置情報を使うことはありません。毎日、世界共通の質問とあなたの大陸に関する質問がいくつか、同じリストに並びます。</p></div>
+</details>
+<details>
+<summary>Quorum はどの言語に対応していますか？</summary>
+<div><p>アプリは英語、ポルトガル語、スペイン語、フランス語、ドイツ語、日本語に対応しており、端末の言語に従います。Quorum だけ言語を変えるには、iPhone では<span class="ui">設定 → アプリ → Quorum → 言語</span>（端末に優先する言語が複数ある場合に表示）、Android 13 以降では<span class="ui">設定 → システム → 言語 → アプリの言語</span>（名称はメーカーによって異なる場合があります）を開いてください。</p></div>
+</details>
+<details>
+<summary>自動翻訳はどのように動きますか？</summary>
+<div><p>質問が端末の言語で用意されていない場合、Quorum は端末上で翻訳し、<span class="ui">自動翻訳</span>と表示します。<span class="ui">原文を表示</span>をタップすると元のテキストを確認できます。初回は、端末で言語パックのダウンロードが必要になる場合があります。翻訳が使えない場合は、利用可能な最も近い言語で質問が表示されます。</p>
+<p>この機能は<span class="ui">設定 → 質問を自動翻訳</span>でオフにできます。</p></div>
+</details>
+<details>
+<summary>毎日のリマインダーを設定するには？</summary>
+<div><p><span class="ui">設定 → 毎日のリマインダー</span>を開き、時刻を選んで、求められたら通知を許可してください。リマインダーが届かない場合は、端末の設定で Quorum の通知が許可されているか確認してください。</p></div>
+</details>
+<details>
+<summary>データを削除するには？</summary>
+<div><p>アプリで<span class="ui">設定 → アカウントを削除 → 完全に削除</span>を選んでください。匿名アカウントと、サーバー上の購入記録が削除されます。すでに集計された投票は集計値に残りますが、あなたとは結び付きません。購入自体は Apple または Google のアカウントに残るため、後で復元できます。</p>
+<p>アプリが手元にない場合は、もう一度インストールして<span class="ui">購入を復元</span>をタップし、その後アカウントを削除してください。またはメールでご連絡ください。Google Play での購入の場合は、注文番号（「GPA.」で始まります）を添えてください。一度も購入していない匿名アカウントは、30日後に自動的に削除されます。</p>
+<p>詳しくは<a href="privacy.html?lang=ja">プライバシーポリシー</a>をご覧ください。</p></div>
+</details>
+<details>
+<summary>質問はどのように作られていますか？ Quorum は中立ですか？</summary>
+<div><p>開発者が毎日、AI ツールの助けを借り、必要に応じて最近のニュースをもとに質問を作成し、公開前にそれぞれの中立性を確認しています。質問は、理性的な人の間でも意見が分かれる未解決のテーマを扱い、どの質問にも双方の最も強い論拠を示しています。</p>
+<p>選挙や候補者についての質問、名指しで個人を非難する質問、医療・法律・金融に関する助言、特定の集団を標的にする質問は扱いません。不公平だと感じる質問があれば、その質問を開いて<span class="ui">質問を報告</span>をタップしてください。報告はすべて確認しています。</p></div>
+</details>
+<details>
+<summary>自分の地域の結果が表示されないのはなぜ？</summary>
+<div><p>プライバシー保護のため、大陸ごとの結果は、その大陸から十分な数の回答が集まってから表示されます。世界全体の集計は、投票後に表示されます。</p></div>
+</details>
+<details>
+<summary>Quorum は科学的な世論調査ですか？</summary>
+<div><p>いいえ。結果はアプリで回答することを選んだ人だけを反映しているため、特定の集団を代表するものではありません。</p></div>
+</details>
+</div>
+</main>
+<footer><p>Quorum は個人開発者 Lucas Arruda が制作しています。</p><p><a href="privacy.html?lang=ja">プライバシーポリシー</a> · <a href="terms.html?lang=ja">利用規約</a> · <a href="support.html?lang=ja">サポート</a></p><p>© 2026 Lucas Arruda</p></footer>
+</div>
+</div>
+<script>
+(function () {
+  var SUPPORTED = ["en", "pt", "es", "fr", "de", "ja"];
+  var TAG = {en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", ja: "ja"};
+  function norm(t) {
+    if (!t) return null;
+    t = String(t).toLowerCase().slice(0, 2);
+    return SUPPORTED.indexOf(t) >= 0 ? t : null;
+  }
+  function fromQuery() {
+    var m = /[?&]lang=([^&#]*)/.exec(location.search);
+    if (!m) return null;
+    try { return norm(decodeURIComponent(m[1])); } catch (e) { return null; }
+  }
+  function fromBrowser() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) { var l = norm(list[i]); if (l) return l; }
+    return "en";
+  }
+  var blocks = document.querySelectorAll("[data-lang]");
+  var select = document.getElementById("lang");
+  var brand = document.getElementById("brand");
+  function show(lang, updateUrl) {
+    var current = null;
+    for (var i = 0; i < blocks.length; i++) {
+      var on = blocks[i].getAttribute("data-lang") === lang;
+      blocks[i].hidden = !on;
+      if (on) current = blocks[i];
+    }
+    if (!current) return;
+    document.documentElement.lang = TAG[lang];
+    document.title = current.getAttribute("data-title");
+    if (select) { select.value = lang; select.setAttribute("aria-label", current.getAttribute("data-langlabel")); }
+    if (brand) brand.href = "index.html?lang=" + lang;
+    if (updateUrl && window.history && history.replaceState) {
+      history.replaceState(null, "", location.pathname + "?lang=" + lang + location.hash);
+    }
+  }
+  show(fromQuery() || fromBrowser(), false);
+  if (select) select.addEventListener("change", function () { show(select.value, true); });
+})();
+</script>
+</body>
+</html>
