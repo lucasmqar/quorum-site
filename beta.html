@@ -50,7 +50,7 @@ var GROUP_URL = "https://groups.google.com/g/quorum-testers";
 var OPTIN_URL = "https://play.google.com/apps/testing/com.lucasmqar.quorum";
 var PLAY_URL = "https://play.google.com/store/apps/details?id=com.lucasmqar.quorum";
 // Measurement. Leave an ID empty to keep that tag off.
-var CLARITY_ID = "";        // Microsoft Clarity project ID, e.g. "abcd1234ef"
+var CLARITY_ID = "zbrnlwb9sj";        // Microsoft Clarity project ID, e.g. "abcd1234ef"
 var META_PIXEL_ID = "1136917412425126";     // Meta Pixel / dataset ID (ad account PERSONAL_ACC)
 var GA4_ID = "G-S5NZZ3EHQT";            // Google Analytics 4 measurement ID, e.g. "G-XXXXXXXXXX"
 var GADS_ID = "";           // Google Ads tag, e.g. "AW-123456789" (optional)
@@ -129,14 +129,13 @@ kbd,.ui{font-weight:600}
 .get-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
 .badge{display:inline-flex;align-items:center;text-decoration:none;border-radius:10px;line-height:0}
 .badge:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-.badge-play img{height:62px;width:auto;margin:-8px -9px}
-.badge-tf{height:46px;gap:9px;padding:0 16px 0 12px;background:#000;color:#fff;border:1px solid #a6a6a6;line-height:1}
-.badge-tf svg{width:26px;height:26px;flex:none}
-.badge-tf span{display:flex;flex-direction:column;gap:2px;text-align:left}
-.badge-tf small{font-size:11px;letter-spacing:.01em}
-.badge-tf b{font:600 21px/1 var(--sans);letter-spacing:-.01em}
+.badge-play img{height:42px;width:auto;display:block}
+.badge-tf{height:42px;min-width:140px;gap:7px;padding:0 14px 0 10px;background:#000;color:#fff;border:1px solid #a6a6a6;border-radius:8px;line-height:1;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif}
+.badge-tf svg{width:24px;height:24px;flex:none;margin-top:-3px}
+.badge-tf span{display:flex;flex-direction:column;gap:1px;text-align:left}
+.badge-tf small{font-size:10px;font-weight:500;letter-spacing:.02em}
+.badge-tf b{font:500 20px/1 -apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.02em}
 .tf-on .badge,.steps .badge{margin-top:10px}
-.steps .badge-play img{margin:-8px -9px -8px -9px}
 html[data-platform] .get{display:none}
 :target{scroll-margin-top:16px}
 section.flash{animation:flash 1.4s ease-out}
@@ -166,15 +165,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="Pick your phone:">
 <p class="get-label">Pick your phone:</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Download on TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Download on</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-en" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-en.png" alt="Get it on Google Play" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Download on TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-en" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-en.png" alt="Get it on Google Play" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-en" aria-labelledby="ios-en">
 <h2 id="ios-en">iPhone</h2>
 <p>On iPhone, the test runs in Apple’s TestFlight app.</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Download on TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Download on</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Download on TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>The iPhone test opens in a few days. Check this page again soon.</strong></p>
 </section>
 
@@ -183,7 +182,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>Join the testers group.</strong><span>Use the same Google account as the Play Store on your phone.</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">Join the group</a></li>
 <li><strong>Accept the invitation.</strong><span>On the page that opens, tap the button to become a tester.</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Accept the invitation</a></li>
-<li><strong>Install from Google Play.</strong><span>After you accept, it can take a few minutes for Quorum to show up.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-en.png" alt="Get it on Google Play" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Install from Google Play.</strong><span>After you accept, it can take a few minutes for Quorum to show up.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-en.png" alt="Get it on Google Play" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
@@ -201,15 +200,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="Escolha o seu celular:">
 <p class="get-label">Escolha o seu celular:</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Baixe no TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Baixe no</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-pt" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-pt.png" alt="Disponível no Google Play" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Baixe no TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Baixe no</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-pt" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-pt.png" alt="Disponível no Google Play" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-pt" aria-labelledby="ios-pt">
 <h2 id="ios-pt">iPhone</h2>
 <p>No iPhone, o teste acontece no app TestFlight, da Apple.</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Baixe no TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Baixe no</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Baixe no TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Baixe no</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>O teste no iPhone abre em poucos dias. Volte a esta página em breve.</strong></p>
 </section>
 
@@ -218,7 +217,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>Entre no grupo de testadores.</strong><span>Use a mesma conta Google da Play Store do seu celular.</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">Entrar no grupo</a></li>
 <li><strong>Aceite o convite.</strong><span>Na página que abrir, toque no botão para virar testador.</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Aceitar o convite</a></li>
-<li><strong>Instale pelo Google Play.</strong><span>Depois de aceitar, pode levar alguns minutos para o Quorum aparecer.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-pt.png" alt="Disponível no Google Play" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Instale pelo Google Play.</strong><span>Depois de aceitar, pode levar alguns minutos para o Quorum aparecer.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-pt.png" alt="Disponível no Google Play" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
@@ -236,15 +235,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="Elige tu teléfono:">
 <p class="get-label">Elige tu teléfono:</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Descárgalo en TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Descárgalo en</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-es" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-es.png" alt="Disponible en Google Play" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Descárgalo en TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Descárgalo en</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-es" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-es.png" alt="Disponible en Google Play" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-es" aria-labelledby="ios-es">
 <h2 id="ios-es">iPhone</h2>
 <p>En iPhone, la prueba funciona con la app TestFlight de Apple.</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Descárgalo en TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Descárgalo en</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Descárgalo en TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Descárgalo en</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>La prueba en iPhone abre en unos días. Vuelve pronto a esta página.</strong></p>
 </section>
 
@@ -253,7 +252,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>Únete al grupo de testers.</strong><span>Usa la misma cuenta de Google que la Play Store de tu teléfono.</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">Unirme al grupo</a></li>
 <li><strong>Acepta la invitación.</strong><span>En la página que se abre, toca el botón para convertirte en tester.</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Aceptar la invitación</a></li>
-<li><strong>Instala desde Google Play.</strong><span>Después de aceptar, Quorum puede tardar unos minutos en aparecer.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-es.png" alt="Disponible en Google Play" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Instala desde Google Play.</strong><span>Después de aceptar, Quorum puede tardar unos minutos en aparecer.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-es.png" alt="Disponible en Google Play" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
@@ -271,15 +270,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="Choisissez votre téléphone :">
 <p class="get-label">Choisissez votre téléphone :</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Télécharger sur TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Télécharger sur</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-fr" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-fr.png" alt="Disponible sur Google Play" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Télécharger sur TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Télécharger sur</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-fr" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-fr.png" alt="Disponible sur Google Play" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-fr" aria-labelledby="ios-fr">
 <h2 id="ios-fr">iPhone</h2>
 <p>Sur iPhone, le test passe par l’app TestFlight d’Apple.</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Télécharger sur TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Télécharger sur</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Télécharger sur TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Télécharger sur</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>Le test sur iPhone ouvre dans quelques jours. Revenez bientôt sur cette page.</strong></p>
 </section>
 
@@ -288,7 +287,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>Rejoignez le groupe des testeurs.</strong><span>Utilisez le même compte Google que celui du Play Store de votre téléphone.</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">Rejoindre le groupe</a></li>
 <li><strong>Acceptez l’invitation.</strong><span>Sur la page qui s’ouvre, touchez le bouton pour devenir testeur.</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Accepter l’invitation</a></li>
-<li><strong>Installez Quorum depuis Google Play.</strong><span>Après l’acceptation, Quorum peut mettre quelques minutes à apparaître.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-fr.png" alt="Disponible sur Google Play" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Installez Quorum depuis Google Play.</strong><span>Après l’acceptation, Quorum peut mettre quelques minutes à apparaître.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-fr.png" alt="Disponible sur Google Play" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
@@ -306,15 +305,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="Wähle dein Telefon:">
 <p class="get-label">Wähle dein Telefon:</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Laden im TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Laden im</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-de" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-de.png" alt="Jetzt bei Google Play" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="Laden im TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Laden im</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-de" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-de.png" alt="Jetzt bei Google Play" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-de" aria-labelledby="ios-de">
 <h2 id="ios-de">iPhone</h2>
 <p>Auf dem iPhone läuft der Test über Apples App TestFlight.</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Laden im TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>Laden im</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="Laden im TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Laden im</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>Der iPhone-Test startet in ein paar Tagen. Schau bald wieder auf dieser Seite vorbei.</strong></p>
 </section>
 
@@ -323,7 +322,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>Tritt der Testergruppe bei.</strong><span>Nutze dasselbe Google-Konto wie im Play Store deines Telefons.</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">Gruppe beitreten</a></li>
 <li><strong>Nimm die Einladung an.</strong><span>Tippe auf der Seite, die sich öffnet, auf die Schaltfläche, um Tester zu werden.</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">Einladung annehmen</a></li>
-<li><strong>Installiere Quorum über Google Play.</strong><span>Nach dem Annehmen kann es ein paar Minuten dauern, bis Quorum erscheint.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-de.png" alt="Jetzt bei Google Play" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Installiere Quorum über Google Play.</strong><span>Nach dem Annehmen kann es ein paar Minuten dauern, bis Quorum erscheint.</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-de.png" alt="Jetzt bei Google Play" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
@@ -341,15 +340,15 @@ section.flash{animation:flash 1.4s ease-out}
 <nav class="get" aria-label="お使いのスマートフォンを選んでください：">
 <p class="get-label">お使いのスマートフォンを選んでください：</p>
 <div class="get-row">
-<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="ダウンロード TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>ダウンロード</small><b>TestFlight</b></span></a></div>
-<div class="get-android"><a class="badge badge-play " href="#android-ja" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-ja.png" alt="Google Play で手に入れよう" width="646" height="250" loading="lazy" decoding="async"></a></div>
+<div class="get-ios"><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="hero_testflight" data-platform="ios" aria-label="ダウンロード TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>ダウンロード</small><b>TestFlight</b></span></a></div>
+<div class="get-android"><a class="badge badge-play " href="#android-ja" rel="noopener" data-ev="hero_android" data-platform="android"><img src="badges/play-ja.png" alt="Google Play で手に入れよう" height="42" loading="lazy" decoding="async"></a></div>
 </div>
 </nav>
 
 <section class="box" id="ios-box-ja" aria-labelledby="ios-ja">
 <h2 id="ios-ja">iPhone</h2>
 <p>iPhone でのテストには、Apple の TestFlight アプリを使います。</p>
-<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="ダウンロード TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.6" cy="15.6" r="1" fill="var(--dot)"/></svg><span><small>ダウンロード</small><b>TestFlight</b></span></a></p>
+<p class="tf-on" hidden><a class="badge badge-tf ln-tf" href="#" rel="noopener" data-ev="testflight" data-platform="ios" aria-label="ダウンロード TestFlight"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>ダウンロード</small><b>TestFlight</b></span></a></p>
 <p class="tf-soon"><strong>iPhone のテストは数日後に始まります。近いうちにまたこのページをご覧ください。</strong></p>
 </section>
 
@@ -358,7 +357,7 @@ section.flash{animation:flash 1.4s ease-out}
 <ol class="steps">
 <li><strong>テスターグループに参加する</strong><span>スマートフォンの Play ストアと同じ Google アカウントを使ってください。</span><a class="btn ln-group" data-ev="group" data-platform="android" href="https://groups.google.com/g/quorum-testers" rel="noopener">グループに参加</a></li>
 <li><strong>招待を承認する</strong><span>開いたページで、テスターになるためのボタンをタップします。</span><a class="btn ln-optin" data-ev="optin" data-platform="android" href="https://play.google.com/apps/testing/com.lucasmqar.quorum" rel="noopener">招待を承認</a></li>
-<li><strong>Google Play からインストールする</strong><span>承認してから Quorum が表示されるまで、数分かかることがあります。</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-ja.png" alt="Google Play で手に入れよう" width="646" height="250" loading="lazy" decoding="async"></a></li>
+<li><strong>Google Play からインストールする</strong><span>承認してから Quorum が表示されるまで、数分かかることがあります。</span><a class="badge badge-play ln-play" href="https://play.google.com/store/apps/details?id=com.lucasmqar.quorum" rel="noopener" data-ev="play" data-platform="android"><img src="badges/play-ja.png" alt="Google Play で手に入れよう" height="42" loading="lazy" decoding="async"></a></li>
 </ol>
 </section>
 
